@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENSIOR · about us</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* main glass container */
+    .about-container {
+      width: 1000px;
+      max-width: 100%;
+      min-height: 700px;
+      max-height: 90vh;
+      background: rgba(20, 20, 30, 0.7);
+      backdrop-filter: blur(18px) saturate(180%);
+      -webkit-backdrop-filter: blur(18px) saturate(180%);
+      border-radius: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+      padding: 40px 50px;
+      overflow-y: auto;
+      color: #f0eaff;
+    }
+
+    /* header */
+    .about-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-img {
+      height: 44px;
+      width: auto;
+      filter: drop-shadow(0 0 10px rgba(180, 150, 255, 0.3));
+      border-radius: 12px;
+      transition: filter 0.2s;
+    }
+    .logo-img:hover {
+      filter: drop-shadow(0 0 15px #b39eff);
+    }
+    .back-link {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 40px;
+      padding: 12px 28px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.2s;
+    }
+    .back-link:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    /* title */
+    h1 {
+      font-size: 36px;
+      font-weight: 350;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h1 i {
+      background: linear-gradient(135deg, #ff6b6b, #ffb347, #ffee88, #6bff6b, #6bb5ff, #b56bff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* content sections */
+    .about-section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: #d4ccff;
+      border-left: 4px solid #b39eff;
+      padding-left: 16px;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: #e0d9ff;
+      font-weight: 300;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #d4ccff;
+    }
+    li i {
+      color: #b39eff;
+      width: 24px;
+      font-size: 1.2rem;
+    }
+    .feature-item {
+      background: rgba(255,255,255,0.03);
+      border-radius: 30px;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .contact {
+      background: rgba(180,150,255,0.1);
+      border-radius: 40px;
+      padding: 20px 30px;
+      margin-top: 30px;
+      border: 1px solid rgba(180,150,255,0.2);
+    }
+    .contact p {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .contact i {
+      font-size: 1.5rem;
+      background: linear-gradient(135deg, #ff6b6b, #ffb347, #ffee88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 30px 0;
+    }
+
+    /* footer note */
+    .footer-note {
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <div class="about-header">
+      <div class="logo-box">
+        <img src="sensior-main-logo.png" alt="SENSIOR" class="logo-img" id="logoImg" onerror="this.src='https://placehold.co/200x50/1a1a2a/e0e0ff?text=SENSIOR&font=montserrat';">
+        <span style="color: rgba(255,255,255,0.2); font-size: 36px;">|</span>
+        <span style="font-weight: 300; letter-spacing: 1px;">about us</span>
+      </div>
+      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> back to prompts</a>
+    </div>
+
+    <h1><i class="fas fa-info-circle"></i> About SENSIOR</h1>
+
+    <div class="about-section">
+      <p>Welcome to <strong>SENSIOR</strong> – a professional prompt library designed to help users quickly copy and use high-quality AI prompts.</p>
+      <p>Our platform is built for creators, developers, designers, marketers, students, and AI enthusiasts who want ready-to-use prompts without wasting time writing from scratch.</p>
+    </div>
+
+    <div class="about-section">
+      <h2><i class="fas fa-paint-brush" style="margin-right: 10px;"></i> What We Do</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Provide structured, optimized AI prompts</li>
+        <li><i class="fas fa-copy"></i> Make prompts easy to copy and use</li>
+        <li><i class="fas fa-tags"></i> Organize prompts by categories</li>
+        <li><i class="fas fa-sync-alt"></i> Continuously update our prompt collection</li>
+      </ul>
+      <p>You simply copy a prompt from our website and paste it into your preferred AI tool.</p>
+      <p><strong>No sign-up. No account creation. No data collection.</strong> Just simple and efficient access to powerful prompts.</p>
+    </div>
+
+    <div class="about-section">
+      <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+      <p>Our mission is to make AI more accessible by providing clean, professional, and effective prompts that save time and improve results. We focus on simplicity, usability, and quality.</p>
+    </div>
+
+    <div class="about-section">
+      <h2><i class="fas fa-star"></i> Why Choose SENSIOR?</h2>
+      <div class="feature-item"><i class="fas fa-check-circle" style="color: #b39eff; margin-right: 12px;"></i> Clean and user-friendly interface</div>
+      <div class="feature-item"><i class="fas fa-user-slash" style="color: #b39eff; margin-right: 12px;"></i> No registration required</div>
+      <div class="feature-item"><i class="fas fa-database" style="color: #b39eff; margin-right: 12px;"></i> No personal data collection</div>
+      <div class="feature-item"><i class="fas fa-bolt" style="color: #b39eff; margin-right: 12px;"></i> Fast and easy prompt copying</div>
+      <div class="feature-item"><i class="fas fa-clock" style="color: #b39eff; margin-right: 12px;"></i> Regularly updated content</div>
+    </div>
+
+    <div class="about-section">
+      <h2><i class="fas fa-exclamation-triangle"></i> Important Note</h2>
+      <p>SENSIOR only provides prompts. We do not generate AI outputs directly and we are not responsible for results generated on third-party AI platforms. Users are responsible for how they use the prompts.</p>
+    </div>
+
+    <div class="contact">
+      <p><i class="fas fa-envelope"></i> <strong>Contact Us:</strong> If you have suggestions, feedback, or business inquiries, feel free to contact us at <a href="mailto:SENSIOR23@gmail.com" style="color: #b39eff; text-decoration: none;">SENSIOR23@gmail.com</a></p>
+    </div>
+
+    <hr>
+    <div class="footer-note">
+      <i class="far fa-copyright"></i> 2026 SENSIOR · prompt studio
+    </div>
+  </div>
+
+  <script>
+    // fallback for logo
+    document.getElementById('logoImg').addEventListener('error', function(e) {
+      e.target.src = 'https://placehold.co/200x50/1a1a2a/e0e0ff?text=SENSIOR&font=montserrat';
+    });
+  </script>
+</body>
+</html>

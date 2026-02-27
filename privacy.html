@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENSIOR · privacy policy</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* main glass container */
+    .privacy-container {
+      width: 1000px;
+      max-width: 100%;
+      min-height: 700px;
+      max-height: 90vh;
+      background: rgba(20, 20, 30, 0.7);
+      backdrop-filter: blur(18px) saturate(180%);
+      -webkit-backdrop-filter: blur(18px) saturate(180%);
+      border-radius: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+      padding: 40px 50px;
+      overflow-y: auto;
+      color: #f0eaff;
+    }
+
+    /* header */
+    .privacy-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-img {
+      height: 44px;
+      width: auto;
+      filter: drop-shadow(0 0 10px rgba(180, 150, 255, 0.3));
+      border-radius: 12px;
+      transition: filter 0.2s;
+    }
+    .logo-img:hover {
+      filter: drop-shadow(0 0 15px #b39eff);
+    }
+    .back-link {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 40px;
+      padding: 12px 28px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.2s;
+    }
+    .back-link:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    /* title */
+    h1 {
+      font-size: 36px;
+      font-weight: 350;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h1 i {
+      background: linear-gradient(135deg, #ff6b6b, #ffb347, #ffee88, #6bff6b, #6bb5ff, #b56bff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* content sections */
+    .privacy-section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: #d4ccff;
+      border-left: 4px solid #b39eff;
+      padding-left: 16px;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: #e0d9ff;
+      font-weight: 300;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #d4ccff;
+    }
+    li i {
+      color: #b39eff;
+      width: 24px;
+      font-size: 1.2rem;
+    }
+    .highlight {
+      background: rgba(180,150,255,0.1);
+      border-radius: 30px;
+      padding: 20px 25px;
+      border: 1px solid rgba(180,150,255,0.2);
+      margin: 20px 0;
+    }
+    .external-link {
+      color: #b39eff;
+      text-decoration: none;
+      border-bottom: 1px dotted;
+    }
+    .external-link:hover {
+      color: #d4b3ff;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 30px 0;
+    }
+    .footer-note {
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    .effective-date {
+      font-style: italic;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="privacy-container">
+    <div class="privacy-header">
+      <div class="logo-box">
+        <img src="sensior-main-logo.png" alt="SENSIOR" class="logo-img" id="logoImg" onerror="this.src='https://placehold.co/200x50/1a1a2a/e0e0ff?text=SENSIOR&font=montserrat';">
+        <span style="color: rgba(255,255,255,0.2); font-size: 36px;">|</span>
+        <span style="font-weight: 300; letter-spacing: 1px;">privacy policy</span>
+      </div>
+      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> back to prompts</a>
+    </div>
+
+    <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+    <div class="effective-date">Effective Date: February 27, 2026</div>
+
+    <div class="privacy-section">
+      <p>Welcome to <strong>SENSIOR</strong>. Your privacy is important to us. This Privacy Policy explains how information is handled when you use our website.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>1. No Personal Data Collection</h2>
+      <p>SENSIOR is a simple prompt library website. We do NOT:</p>
+      <ul>
+        <li><i class="fas fa-times-circle"></i> Require user registration</li>
+        <li><i class="fas fa-times-circle"></i> Collect personal information</li>
+        <li><i class="fas fa-times-circle"></i> Store user data</li>
+        <li><i class="fas fa-times-circle"></i> Allow user uploads</li>
+        <li><i class="fas fa-times-circle"></i> Track personal user activity</li>
+        <li><i class="fas fa-times-circle"></i> Sell or share user data</li>
+      </ul>
+      <p>You can freely browse, copy prompts, and use them in your preferred AI tools without providing any personal information.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>2. Log Data</h2>
+      <p>Like most websites, basic non-personal data may automatically be collected by hosting providers, such as:</p>
+      <ul>
+        <li><i class="fas fa-ip"></i> IP address</li>
+        <li><i class="fas fa-globe"></i> Browser type</li>
+        <li><i class="fas fa-mobile-alt"></i> Device type</li>
+        <li><i class="fas fa-calendar"></i> Date and time of visit</li>
+      </ul>
+      <p>This data is used only for website performance, security, and analytics purposes. It is not used to personally identify users.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>3. Google AdSense & Cookies</h2>
+      <p>SENSIOR uses <strong>Google AdSense</strong> to display advertisements.</p>
+      <div class="highlight">
+        <p><i class="fas fa-ad" style="color: #b39eff; margin-right: 10px;"></i> Google and third-party vendors may use cookies to:</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Serve ads based on previous visits to this website or other websites</li>
+          <li><i class="fas fa-check-circle"></i> Provide personalized advertisements</li>
+        </ul>
+      </div>
+      <p>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" class="external-link">Google Ads Settings</a>.</p>
+      <p>Third-party vendors, including Google, use cookies to serve ads based on prior visits to this website.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>4. Third-Party Links</h2>
+      <p>SENSIOR may contain links to third-party AI tools or external websites. We are not responsible for the privacy practices or content of those websites.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>5. Children's Privacy</h2>
+      <p>SENSIOR does not knowingly collect any personal information from anyone, including children under 13. Since we do not collect personal data, there is no storage of children's information.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>6. Data Security</h2>
+      <p>Because we do not collect or store personal data, there is minimal risk of data misuse.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy at any time. Changes will be posted on this page with an updated effective date.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, you may contact us at:</p>
+      <p style="font-size: 1.2rem;"><i class="fas fa-envelope" style="color: #b39eff;"></i> <a href="mailto:SENSIOR23@gmail.com" style="color: #b39eff; text-decoration: none;">SENSIOR23@gmail.com</a></p>
+    </div>
+
+    <hr>
+    <div class="footer-note">
+      <i class="far fa-copyright"></i> 2026 SENSIOR · prompt studio
+    </div>
+  </div>
+
+  <script>
+    // fallback for logo
+    document.getElementById('logoImg').addEventListener('error', function(e) {
+      e.target.src = 'https://placehold.co/200x50/1a1a2a/e0e0ff?text=SENSIOR&font=montserrat';
+    });
+  </script>
+</body>
+</html>
